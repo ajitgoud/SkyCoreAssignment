@@ -22,9 +22,10 @@ interface YelpApi {
     @GET("search")
     suspend fun getRestaurants(
         @Query("location") location: String = "NYC",
-        @Query("radius") radius: String = "500",
-        @Query("sort_by") sort_by: String = "best_match",
-        @Query("limit") limit: String = "15",
+        @Query("radius") radius: Int = 500,
+        @Query("sort_by") sort_by: String = "distance",
+        @Query("limit") limit: Int = 15,
+        @Query("offset") offset: Int = 0
     ): YelpResponse
 
 }
