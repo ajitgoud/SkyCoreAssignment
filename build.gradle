@@ -24,9 +24,11 @@ buildscript {
         coroutinesVersion = "1.6.1"
         dataStoreVersion = "1.1.0-alpha01"
         hiltAndroidXVersion = "1.0.0-alpha03"
-        hiltVersion = "2.28.3-alpha"
+        hiltVersion = "2.44"
         navigationVersion = "2.5.3"
         roomVersion = "2.4.3"
+        glideVersion = "4.14.2"
+
 
         junitVersion = "4.13.2"
         testExtJunitVersion = "1.1.4"
